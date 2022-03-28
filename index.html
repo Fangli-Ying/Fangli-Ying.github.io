@@ -15,7 +15,7 @@
 <td id="layout-menu">
 <div class="menu-category">Menu</div>
 <div class="menu-item"><a href="index.html" class="current">Home</a></div>
-<div class="menu-item"><a href="https://fangli-ying.github.io/index_CH.html">中文页面</a></div>
+<div class="menu-item"><a href="https://fangli-ying.github.io/index_CH.html"><b><font color="red" size="3">中文页面</font></b></a></div>
 <div class="menu-item"><a href="https://www.zhihu.com/people/ren-gong-zhi-neng-xiao-ban-chang-78">个人博客</a></div>
 <div class="menu-item"><a href="https://www.researchgate.net/profile/Fangli-Ying">ResearchGate</a></div>
 <div class="menu-item"><a href="https://scholar.google.com/citations?user=42vG9qoAAAAJ&hl=en&oi=ao">Google Scholar</a></div>
@@ -24,11 +24,11 @@
 </td>
 <td id="layout-content">
 <div id="toptitle">
-<h1>Ying, Fangli (应方立) </h1> <p><a href="https://wacv2021.thecvf.com/home"> 中文页面</a>
+<h1>Ying, Fangli <a href="https://fangli-ying.github.io/index_CH.html"> (应方立)</a> </h1> 
 </div>
 <table class="imgtable"><tr><td>
 <a href="https://github.com/Fangli-Ying"><img src="photos/bio.jpg" alt="alt text" width="131px" height="160px" /></a>&nbsp;</td>
-<td align="left"><p>Lecturer,<br />
+<td align="left"><p>Lecturer, MSc Supervisor, PhD Co-supervisor，<br />
 Department of Computer Science,<br />
 East China University of Science and Technology. <br />
 NO.130 Meilong Road, Xuhui District <br />
@@ -40,31 +40,93 @@ E-mail: yfangli[at]ecust[dot]edu[dot]cn</a></p>
 
 <h2>Research</h2>
 <p>My research interests include: </p>
+
 <ul>
-<li><p>Computer Vision  </p>
+<li><p>Computer Vision</p>
+</li>
+<li><p>Deep Generative Models</p>
 </li>
 <li><p>Few-shot Learning</p>
 </li>
-<li><p>Computational Biology</p>
+<li><p>Bioinformatics</p>
+</li>
+</ul>
+
+
+<h3>Current work</h3>
+
+
+<ul>
+<li>
+<details> <summary tabindex="-1"><a href="javascript:" onClick="this.parentNode.click();">Few-shot Image Generation</a></summary> 
+<content>
+<div >
+    <p>As a type of effective deep learning models, the Generative Adversarial Networks (GANs) are capable of synthesizing new realistic images and estimate the potential distribution of the samples utilizing adversarial learning. Nevertheless, the conventional GANs require a large amount of training data samples for producing plausible results. Inspired by the capacity of humans to quickly learn new concepts from a small number of examples, Fast Adaptive Meta-Learning (FAML) based GAN and encoder network is proposed in this study for few-shot image generation. This model demonstrates its capability to generate new realistic images from previously-unseen target classes with only a small number of examples required. By adopting two latent vectors, an enhanced algorithm is proposed to prevent mode collapse. Our model is able to improve few-shot image generation with the lowest FID score and highest IS on MNIST, Omniglot, VGG-Faces, and miniImageNet dataset. Moreover, it has been demonstrated the relativistic discriminator is effective in improving the overall visual quality of few-shots generation and is more than 10 times faster to achieve model convergence with as few as one-fourth of parameters required.</p>
+</div>
+<div >
+    <img src="photos/FAML.PNG" alt="alt text" width="300px" height="300px" />
+</div>
+ </content> 
+ </details>
 </li>
 
+
+<li>
+<details> <summary ><a href="javascript:" onClick="this.parentNode.click();">Reinforcement Learning for Portfolio Management</a></summary> 
+<content>
+<div >
+    <p>Although Deep Reinforcement Learning (DRL) models have made remarkable achievements in the financial trading, it is surprising that most of the literature ignores the possible risk of rare occurrences of catastrophic events and the effect of the worst-case scenarios on trading decisions. In this paper, we first develop a novel deep RL algorithm to control the risk of portfolio investment, while maximizing the α percentile expectation based on the distribution of future returns. A real world data set is used to validate the performance of our proposed models. The experimental results show that our proposed models outperform the market.</p>
+</div>
+<div >
+    <img src="photos/PM.PNG" alt="alt text" width="300px" height="300px" />
+</div>
+ </content> 
+ </details>
+</li>
+
+
+
+
+
+<li>
+<details> <summary tabindex="1"><a href="javascript:" onClick="this.parentNode.click();">Video Summarization</a></summary> 
+<content>
+<div >
+    <p>With the exponential growth of video data, video summarization techniques are urgently needed for reducing people’s efforts in the videos' content exploration by generating succinct but informative summaries from original lengthy videos. Though supervised video summarization approaches have demonstrated the state-of-the-art performance, unsupervised methods are still highly demanded due to resourcefully expensive human annotations and the subjectiveness of video summarization tasks. In this paper, a novel unsupervised-based Deep Self-attention Recurrent summarization network with Reinforcement Learning (DSR-RL) for video summarization is proposed. The model can learn the input video sequence and suggest the key-shot summary without additional human annotations by integrating self-attention, BRNN, and reinforcement learning mechanisms. The DSR-RL improves not only importance score through the attention map vector of self-attention network but also the diversity of summaries via the reward function of reinforcement learning. Our method outperforms the state-of-the-art unsupervised video summarization methods on both SumMe and TVSum datasets.</p>
+</div>
+<div >
+    <img src="photos/VS.PNG" alt="alt text" width="300px" height="300px" />
+</div>
+ </content>
+ </details>
+</li>
+
+
+
+<li>
+<details> <summary tabindex="1"><a href="javascript:" onClick="this.parentNode.click();">Image Quality Assessment</a></summary> 
+<content>
+<div >
+    <p>Automatic facial beauty assessment has recently attracted a growing interest and achieved impressive results. However, despite the obvious subjectivity of beauty perception, most studies are addressed to predict generic or universal beauty and only few works investigate an individual’s preferences in facial attractiveness. Unlike universal beauty assessment, an effective personalized method is required to produce a reasonable accuracy on a small amount of training images as the number of annotated samples from an individual is limited in real-world applications. In this work, a novel personalized facial beauty assessment approach based on meta-learning is introduced. First of all, beauty preferences shared by an extensive number of individuals are learnt during meta-training. Then, the model is adapted to a new individual with a few rated image samples in the meta-testing phase. The experiments are conducted on a facial beauty dataset that includes faces of various ethnic, gender, age groups and rated by hundreds of volunteers with different social and cultural backgrounds. The results demonstrate that the proposed method is capable of effectively learning personal beauty preferences from a limited number of annotated images and outperforms the facial beauty prediction state-of-the-art on quantitative comparisons.</p>
+</div>
+<div >
+    <img src="photos/FB.PNG" alt="alt text" width=300px" height="150px" />
+</div>
+ </content>
+ </details>
+</li>
+
+
 </ul>
-<h3>Current work</h3>
-<ul>
-<li><p>Few-shot Image Generation</p>
-</li>
-<li><p>Reinforcement Learning for Portfolio Management</p>
-</li>
-<li><p>Video Summarization</p>
-</li>
-<li><p>Image Quality Assessment</p>
-</li>
-</ul>
+
+
+
+
 <h3>Under review</h3>
 <ol>
 <li><p>A.Y., Phaphuangwittayakul, A.#, Yi G., and <b>F. Ying</b>*, "Adaptive adversarial prototyping network for few-shot prototypical translation".</p>
 </li>
-<li><p><b>F. Ying</b>* , A.Y., Phaphuangwittayakul, A.#, Yi G. "Unsupervised Meta-learning-based Adversarial Variational Auto-Encoder for Few-shot Image Generation".</p>
+<li><p><b>F. Ying</b>* , A.Y., Phaphuangwittayakul, A.#, Yi G. "Meta-FAVAE: Toward Fast and Diverse Few-shot Image Generation via Meta-Learning and Feedback Augmented Adversarial VAE". ICLR 2022 DGM workshop [<a href="https://openreview.net/forum?id=HrlGx64uvZq">Conference workshop</a>]</p>
 </li>
 
 
@@ -204,14 +266,8 @@ E-mail: yfangli[at]ecust[dot]edu[dot]cn</a></p>
 </li>
 <li><p>ESRI Scholar, in <a href="https://agile-online.org/"> AGILE conference</a>  2010</p>
 </li>
+</ul>
 
-</ul>
-<h3>Activities (to be added) </h3>
-<p>Research Assistant, World Bank, 04.2013-09.2013</p>
-<ul>
-<li><p>Data Visualization and Climate Changing Data Publication for Center Asia</p>
-</li>
-</ul>
 
 
 
@@ -245,6 +301,13 @@ E-mail: yfangli[at]ecust[dot]edu[dot]cn</a></p>
 <li><p>Built a User Comments Management SaaS Systems for Top E-commence brands</p>
 </li>
 </ul>
+<p>Research Assistant, World Bank, 04.2013-09.2013</p>
+<ul>
+<li><p>Data Visualization and Climate Changing Data Publication for Center Asia</p>
+</li>
+</ul>
+
+
 
 <p><br />
 <a href="https://disco-lotus-4c5.notion.site/Recruitment-of-Excellent-Candidates-for-International-Master-Program-in-Computer-Science-at-ECUST-Ch-5dfd5e98187e471e857e69790a029865">Recruitment of Master and PhD students</a>.</p>
